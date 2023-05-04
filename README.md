@@ -1,5 +1,3 @@
-# my-restaurant
-
 # **Tasty Food**
 
 
@@ -62,7 +60,12 @@
 | **coffee**    |  20$  |           
 | **juices**    |  30$  |       
 
+---
+### Their warm and inviting atmosphere, along with their friendly staff, ensures a memorable dining experience for all customers. 
+
+![pic](https://mir-s3-cdn-cf.behance.net/project_modules/fs/6bcbe2115068253.64539737ec242.png) 
 
 
+ ----
 
 ###### Copyright © 2023 Tasty Food - Written by markdown language - [Let's Work Together](https://duaahammo.myportfolio.com/contact) 
