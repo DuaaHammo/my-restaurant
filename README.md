@@ -51,7 +51,8 @@
 | **Lunch**     |  80$  | 
 | **dinner**    |  80$  |         
 | **coffee**    |  20$  |           
-| **juices**    |  30$  |       
+| **juices**    |  30$  |    
+   
 
 ---
 ### Their warm and inviting atmosphere, along with their friendly staff, ensures a memorable dining experience for all customers. 
