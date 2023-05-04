@@ -2,23 +2,16 @@
 
 
 
-
-
-![logo restaurant](https://mir-s3-cdn-cf.behance.net/project_modules/fs/4a0129115068253.64539737ee72d.png)
-
-
-
+![logo restaurant](https://mir-s3-cdn-cf.behance.net/project_modules/fs/4a0129115068253.64539737ee72d.png)  
 
 ### Tasty Food is a family-owned restaurant located in ِAmman 
-
----
-
-
+\
+\
+\
 ![pic restaurant](https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec860e115068253.64539737f0145.png)
 
 
-
- ### They use only fresh and high-quality ingredients to make delicious and authentic cuisine, including vegetarian and gluten-free options.
+### They use only fresh and high-quality ingredients to make delicious and authentic cuisine, including vegetarian and gluten-free options.
 
 ![Food pic](https://www.pngmart.com/files/15/Salad-Food-Plate-Top-View-PNG.png)
 
@@ -58,7 +51,8 @@
 | **Lunch**     |  80$  | 
 | **dinner**    |  80$  |         
 | **coffee**    |  20$  |           
-| **juices**    |  30$  |       
+| **juices**    |  30$  |    
+   
 
 ---
 ### Their warm and inviting atmosphere, along with their friendly staff, ensures a memorable dining experience for all customers. 
