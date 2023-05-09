@@ -15,7 +15,7 @@
 
 ![Food pic](https://www.pngmart.com/files/15/Salad-Food-Plate-Top-View-PNG.png)
 
- # BREAKFAST & BRUNCH
+# BREAKFAST & BRUNCH
 
 ##### Everything bagel breakfast salad with bacon, eggs, avocado, everything bagel croutons, and cream cheese dressing is perfect for a light and cozy weekend brunch!
 
