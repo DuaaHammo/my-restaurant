@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+
+
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayl.css">
+    <title>Tasty Food</title> 
+    <link rel="icon" href="favicon.ico"> 
+
+</head>
+
+<!-- inline styling -->
+<header>
+  <nav>  
+    <ul>
+      <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/062878115068253.6459106b5ce77.png" alt="logo"></li>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="order.html" class="active">Order now!</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+ 
+<!--title -->
+<div class="text-with-image">
+  <li>
+  <h1>Tasty Food</h1><p style="text-align: right;"></p>
+  
+</li>
+</div>
+
+<!--end title-->
+
+<!--contant star-->
+<selection class="grid">
+<div class="content">
+  <div class="dev content-left">
+    <div class="info">
+      <h2>Order your Best Food anytime</h2>
+      <p> Hey your delicous food is waiting for you.</p>
+      <button>Explore Food
+      </button>
+    </div>
+  </div>
+  <div class="dev content-right">
+    <img src="https://pngimg.com/uploads/pasta/pasta_PNG67.png" alt="">
+  </div>
+</div>
+
+</selection>
+
+
+
+<!--contant end-->
+  <!-- our menu-->
+
+  <title>Restaurant Menu</title>
+  <style>
+    /* Style for the menu items */
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .menu-item h2 {
+      margin: 0;
+    }
+
+    .menu-item p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .menu-item img {
+      max-width: 100px;
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
-  
+  <h1>Our Menu</h1>
+  <ul>
+    <li class="menu-item">
+      <div>
+        <h2>BREAKFAST & BRUNCH </h2><p style="text-align: right;"></p>
+
+        <p>bagel breakfast salad with bacon, eggs, everything bagel croutons.</p>
+        <h3> <p style="text-align: center;"> 80$ </b></h3></p>
+      </div>
+      <img src="https://www.pngmart.com/files/15/Salad-Food-Plate-Top-View-PNG.png" alt="BREAKFAST & BRUNCH">
+    </li>
+    <hr>
+    <li class="menu-item">
+      <div>
+        <h2>REVERSE SEARED CHUCK STEAK </h2>
+        <p>Reverse seared chuck steak, a tougher cut of meat.</p>
+        <h3> <p style="text-align: center;"> 70$ </b></h3></p>
+      </div>
+      <img src="https://www.pngmart.com/files/15/Food-Plate-Top-View-Nutrition-PNG.png" alt="REVERSE SEARED CHUCK STEAK BRANDY PEPPERCORN SAUCE">
+    </li>
+    <hr>
+    <li class="menu-item">
+      <div>
+        <h2>COFFEE WITH COCONUT CREAM & HAWAIJ</h2>
+        <p>Hot coffee served with some good Irish whiskey,vegan Irish coffee.</p>
+        <h3> <p style="text-align: center;"> 30$ </b></h3></p>
+      </div>
+      <img src="https://www.pngmart.com/files/4/Coffee-Mug-Top-PNG-Photo.png" alt="Coffee">
+    </li>
+    <hr>
+  </ul>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27072.58642101797!2d35.78900083950418!3d31.98602828623408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca234381c5775%3A0xc756498fe233963c!2sDabouq%2C%20Amman!5e0!3m2!1sen!2sjo!4v1683570604061!5m2!1sen!2sjo" width="100%" height="450" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
 </html>
