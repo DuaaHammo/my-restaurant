@@ -1,0 +1,175 @@
+body
+{
+    background-color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    text-align:center;
+}
+
+header
+{
+    background-color: #ffff;
+    padding: 15px;
+    box-shadow: 0 0 3px #000;
+}
+
+header li
+{
+
+    display: inline;
+    padding-left: 45px;
+}
+
+header li a
+{
+color: #333333;text-decoration: none;
+padding: 13px;
+transition: 3s ease;
+
+}
+
+header li a :after
+{
+color :darkslategray;text-decoration: none;
+padding: 13px;
+
+}
+
+
+header ul #Order a
+{
+ color: #1d1a1a; 
+ background-color: darkslategray;
+ border-radius: 30px;
+ float: right;
+ position: relative;
+ top: -15px;
+ transition: .3s ease;
+}
+
+header ul #Order a :hover
+{
+ background-color: goldenrod;
+}
+
+header li img
+{
+    width: 100px;
+    float: left;
+    margin-top: -20px; 
+}
+
+.nav ul .active::after{
+    content: '';
+width: 50px;
+height: 3px;
+background-color: darkslategray;
+display: flex;
+position: relative;
+margin-left: 10px;
+
+}
+
+
+    
+    
+    .text-with-image {
+        
+        background-size: cover;
+        color: #000;
+        padding: 50px;
+    
+    }
+   
+
+
+
+
+
+
+
+    
+    *::after , ::before {
+
+
+        margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    /*--contant text--*/
+
+.content {
+    display: grid;
+margin-top: 120px;
+    grid-template-columns: 50px auto;
+gap: 30px;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}   
+
+/*--contantleft side--*/
+.content .content-lift{
+    display: block;
+    width: 100%;
+
+}
+.content .content-lift .info{
+
+max-width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+
+.content .content-lift .info h2 {
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    }
+
+
+
+
+.content .content-lift .info p{
+
+    font-size: 20px;
+    line-height: 2pc;
+margin-bottom: 30px;
+font-family: sans-serif;
+
+}
+    /*--contant butun--*/
+    .content .content-lift button{
+        padding: 10px 23px;
+        background-color: rgb(18, 90, 66);
+        color: #ffffff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .content .content-right {
+        display: block;
+        width: 100%;
+
+    }
+    .content .content-right img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        animation: rotate 10s linear infinite;
+
+    }
+    @keyframes identifier {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
