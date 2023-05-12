@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tasty Food</title>
     <link rel="stylesheet" href="stayl.css">
-    <title>Tasty Food</title> 
     <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+      .heartbeat-animation {
+          animation: heartbeat 1.5s infinite;
+          transform-origin: center;
+      }
+
+      @keyframes heartbeat {
+          0% {
+              transform: scale(1);
+          }
+          50% {
+              transform: scale(1.2);
+          }
+          100% {
+              transform: scale(1);
+          }
+      }
+  </style>
 </head>
+
+<!--header-->
 <header>
-    <nav>  
-      <ul>
-        <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/062878115068253.6459106b5ce77.png" alt="logo"></li>
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="order.html" class="active">Order now!</a></li>
-      </ul>
+  <div class="logo">
+    <a href="home.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="index.html">Location</a></li>
+            <li><a href="https://duaahammo.myportfolio.com/contact">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="Reservations"><a href="#">Reservations</a></li>
+        </ul>
     </nav>
-  </header>
-
-<head>
-    <div><img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec860e115068253.64539737f0145.png" alt="Restaurant"center="1s0x151ca234381c5775%3A0xc756498fe233963c">
-
     
-</div>
+</header>
 
-<form>
-    <label for="name">Name:</label>
-    <input type="text" name="name"><br><br>
-    <label for="sex">Sex:</label>
-    <input type="radio" name="sex" id="male" value="male">
-    <label for="male">Male</label>
-    <input type="radio" name="sex" id="female" value="female">
-    <label for="female">Female</label> <br><br>
-    <label for="country">Country: </label>
-    <select name="country" id="country">
-        <option>Select an option</option>
-        <option value="nepal">aqaba</option>
-        <option value="usa">amman</option>
-        <option value="australia">Jarash</option>
-    </select><br><br>
-    <label for="message">Message:</label><br>
-    <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
-    <input type="checkbox" name="newsletter" id="newsletter">
-    <label for="newsletter">Subscribe?</label><br><br>
-    <input type="submit" value="Order Now!">
-</form>
-<body>
-    <!--footer-->
+<!--contant img& text-->
+<section class="grid">
+    <div class="content">
+        <div class="content-left">
+            <div class="info">
+                <h2>About Us</h2>
+                <p>Welcome to Tasty Food, your go-to destination for delicious meals made with love and passion. We are
+                    dedicated to providing our customers with a memorable dining experience, offering a wide range of
+                    culinary delights that are sure to tantalize your taste buds.</p>
+                <p>At Tasty Food, we believe in using only the freshest ingredients sourced from local suppliers. Our
+                    talented chefs combine traditional cooking techniques with innovative flavors to create mouthwatering
+                    dishes that will leave you craving for more.</p>
+                <p>Whether you're in the mood for a juicy burger, a refreshing salad, or a decadent dessert, our menu has
+                    something to satisfy every palate. We also offer a selection of vegetarian and vegan options to cater
+                    to our health-conscious customers.</p>
+                <p>Visit us today and indulge in a culinary journey like no other. Our friendly staff is ready to serve
+                    you and ensure that your dining experience at Tasty Food is nothing short of exceptional.</p>
+            </div>
+        </div>
+      
+        <div class="">
+            <img src="3.png" alt="About Us Image" class="heartbeat-animation">
+        </div>
+    </div>
+</section>
 
-<body>
-    <main>
-        <section>
-            
-            <footer>
-                <p>Copyright 2023 Duaa Hammo All Rights Reserved. Contact us: <a href="https://duaahammo.myportfolio.com/contact">Let's Work Togother</a> - Powered by <a href="https://duaahammo.myportfolio.com/work">DUA'A HAMMO </a>.</p>
-            </footer>
-        </section>
-    </main>
-</body>
-</html>
+<!--footer-->
+<footer>
+    <div class="footer-content">
+        &copy; 2023 Tasty Food - DUA'A HAMMO <a href="https://duaahammo.myportfolio
