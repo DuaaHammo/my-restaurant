@@ -1,175 +1,685 @@
-body
-{
-    background-color: #ffffff;
-    padding: 0%;
-    margin: 0%;
-    overflow-x: hidden;
-    text-align:center;
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+header {
+  background-color: #ffffff;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-header
-{
-    background-color: #ffff;
-    padding: 15px;
-    box-shadow: 0 0 3px #000;
+.logo img {
+  width: 100px;
 }
 
-header li
-{
-
-    display: inline;
-    padding-left: 45px;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-header li a
-{
-color: #333333;text-decoration: none;
-padding: 13px;
-transition: 3s ease;
-
+nav ul li {
+  margin-left: 20px;
 }
 
-header li a :after
-{
-color :darkslategray;text-decoration: none;
-padding: 13px;
-
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  position: relative;
+  padding: 13px;
+  transition: 0.5s ease;
 }
 
-
-header ul #Order a
-{
- color: #1d1a1a; 
- background-color: darkslategray;
- border-radius: 30px;
- float: right;
- position: relative;
- top: -15px;
- transition: .3s ease;
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease;
 }
 
-header ul #Order a :hover
-{
- background-color: goldenrod;
+nav ul li a:hover {
+  color: #1d1a1a;
 }
 
-header li img
-{
-    width: 100px;
-    float: left;
-    margin-top: -20px; 
+nav ul li a:hover::after {
+  background-color: #1d1a1a;
 }
 
-.nav ul .active::after{
-    content: '';
-width: 50px;
-height: 3px;
-background-color: darkslategray;
-display: flex;
-position: relative;
-margin-left: 10px;
-
+nav ul .Reservations a {
+  color: #1d1a1a;
+  background-color: rgb(160, 182, 182);
+  border-radius: 30px;
+  float: right;
+  position: relative;
+  top: -15px;
+  transition: 0.5s ease;
+  padding: 13px;
 }
 
+nav ul .Reservations a:hover {
+  background-color: goldenrod;
+}
 
-    
-    
-    .text-with-image {
+/*--- contant img & text -- */
+.grid {
+  display: grid;
+  grid-template-areas: none ;
+  gap: 5px;
+  
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*---content---*/
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-left {
+  width: 50%;
+}
+
+/*--img---*/
+.content-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.content-right img {
+  height: auto;
+  width: 150%;
+  animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ /*--contant butun--*/
+ button{
+  padding: 10px 135px;
+  background-color: rgb(32, 74, 60);
+  color: #f1f1f1;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.text-with-image {
         
-        background-size: cover;
-        color: #000;
-        padding: 50px;
-    
-    }
-   
+  background-size: cover;
+  color: #000;
+  padding: 50px;
+
+}
+
+
+*::after , ::before {
+
+
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+/*--cardfood--*/
+.food-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+
+}
+
+.food-card {
+  width: 300px;
+  border: 1px solid #bababa;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.food-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.food-description {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.food-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quantity {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+
+/*--cards--*/
 
 
 
 
+.food-image {
+  display: block;
+  margin: -0px auto 0;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+}
 
 
 
-    
-    *::after , ::before {
+ .food-title {
+  padding: 20px 0 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.food-card .desc-food p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+
+ .food-card .food-price .quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .food-card .food-price .plus-icon {
+  color: #445342;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.food-card .food-price .minus-icon {
+  color: #445342;
+  font-size: 20px;
+  cursor: pointer;
+}
+.food-card .food-title {
+  margin-bottom: 10px;
+}
+
+.food-card .food-description {
+  margin-bottom: 10px;
+}
+
+.food-card .food-price {
+  margin-top: 10px;
+}
+.food-card .food-image {
+  margin-bottom: 50px;
+}
+.food-card:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 
 
-        margin: 0%;
-        padding: 0;
-        box-sizing: border-box;
+/*--img---*/
+.content-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
 
-    }
 
-    /*--contant text--*/
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+ /*--contant butun--*/
+ button{
+  padding: 10px 23px;
+  background-color: rgb(32, 74, 60);
+  color: #f1f1f1;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.text-with-image {
+        
+  background-size: cover;
+  color: #000;
+  padding: 50px;
+
+}
+
+
+*::after , ::before {
+
+
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/*---text lift & img--*/
+.content-left {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.content-left img {
+  height: auto;
+  width: 150%;
+  animation: rotate 80s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 
 .content {
-    display: grid;
-margin-top: 120px;
-    grid-template-columns: 50px auto;
-gap: 30px;
-align-items: center;
-justify-content: space-between;
-width: 100%;
-}   
-
-/*--contantleft side--*/
-.content .content-lift{
-    display: block;
-    width: 100%;
-
-}
-.content .content-lift .info{
-
-max-width: 100%;
-display: flex;
-flex-direction: column;
+  display: flex;
+  justify-content: start;
+  align-items: left;
 }
 
+.content-left {
+  width: 50%;
+}
 
-.content .content-lift .info h2 {
-    font-size: 60px;
-    font-family: sans-serif;
-    margin-bottom: 30px;
-    }
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.content-left img {
+  width: 200px; 
+  height: auto;
+  margin-right: 20px; 
+}
+
+/*-- Reservation--*/
+#reservation {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#reservation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #445342;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*---reservation---*/
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#reservation {
+  max-width: 500px;
+  width: 100%;
+}
+
+#reservation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #445342;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #445342;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 
 
-.content .content-lift .info p{
 
-    font-size: 20px;
-    line-height: 2pc;
-margin-bottom: 30px;
-font-family: sans-serif;
+/*--Footer--*/
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  color: #888;
+  font-size: 14px;
+}
+
+.footer-content a {
+  color: #89c192;
+  text-decoration: none;
+}
+
+
+/*--FORM--*/
+form input:hover,
+form select:hover,
+form textarea:hover {
+  border-color: #ff8c00;
+  box-shadow: 0 0 5px #ff8c00;
+}
+
+/*--CONTACT--*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/*----about us--*/
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  position: relative;
+  padding: 13px;
+  transition: 0.5s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: #1d1a1a;
+}
+
+nav ul li a:hover::after {
+  background-color: #1d1a1a;
+}
+
+nav ul .Reservations a {
+  color: #1d1a1a;
+  background-color: rgb(160, 182, 182);
+  border-radius: 30px;
+  float: right;
+  position: relative;
+  top: -15px;
+  transition: 0.5s ease;
+  padding: 13px;
+}
+
+nav ul .Reservations a:hover {
+  background-color: goldenrod;
+}
+
+/* Content Section Styles */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.content-left {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.content-left img {
+  height: auto;
+  width: 150%;
+  animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.content-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.content-right img {
+  height: auto;
+  width: 150%;
+  animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Button Styles */
+button {
+  padding: 10px 135px;
+  background-color: rgb(32, 74, 60);
+  color: #f1f1f1;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Text with Image Section Styles */
+.text-with-image {
+  background-size: cover;
+  color: #000;
+  padding:
+}
+
+/*-scrool-bar-*/
+::-webkit-scrollbar{
+  width: 10px;
 
 }
-    /*--contant butun--*/
-    .content .content-lift button{
-        padding: 10px 23px;
-        background-color: rgb(18, 90, 66);
-        color: #ffffff;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-    }
+::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: #1d1a1a;
 
-    .content .content-right {
-        display: block;
-        width: 100%;
-
-    }
-    .content .content-right img{
-        width: 100%;
-        height: auto;
-        position: relative;
-        animation: rotate 10s linear infinite;
-
-    }
-    @keyframes identifier {
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
-        }
-        
-    }
+}
