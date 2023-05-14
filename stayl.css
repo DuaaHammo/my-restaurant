@@ -3,10 +3,12 @@
 body{
   width: 100vw;
   overflow-x: hidden;
+  min-height: 100vh; 
+  
 }
 header {
   background-color: #f1f1f1;
-  padding: 20px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,7 +104,7 @@ nav ul .Reservations a:hover {
 .content-right {
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center
   align-items: center;
   user-select: none;
   position: relative;
@@ -359,7 +361,7 @@ nav ul .Reservations a:hover {
 .content {
   display: flex;
   justify-content: start;
-  align-items: left;
+  
 }
 
 .content-left {
@@ -585,14 +587,10 @@ nav ul {
   display: flex;
 }
 
-/*----about us--*/
-/* Global Styles */
-
 
 /* Header Styles */
 header {
   background-color: #ffffff;
-  padding: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -730,16 +728,7 @@ button {
   padding: 50px;
 }
 
-/*-scrool-bar-*/
-::-webkit-scrollbar{
-  width: 10px;
 
-}
-::-webkit-scrollbar-thumb{
-  border-radius: 20px;
-  background-color: #1d1a1a;
-
-}
 
 
 /*---size--*/ 
