@@ -1,14 +1,17 @@
+
+
 body{
   width: 100vw;
   overflow-x: hidden;
 }
 header {
-  background-color: #ffffff;
-  padding: 100px;
+  background-color: #f1f1f1;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  
+  
 }
 
 .logo img {
@@ -23,7 +26,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-right: 10px
 }
 
 nav ul li a {
@@ -33,6 +36,7 @@ nav ul li a {
   position: relative;
   padding: 13px;
   transition: 0.5s ease;
+  
 }
 
 nav ul li a::after {
@@ -159,6 +163,9 @@ nav ul .Reservations a:hover {
   border: 1px solid #bababa;
   border-radius: 5px;
   padding: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .food-title {
@@ -236,6 +243,7 @@ nav ul .Reservations a:hover {
   margin-bottom: 10px;
   line-height: 1.4;
   font-family: sans-serif;
+  
 }
 
  .food-card .food-price .quantity-controls {
@@ -493,24 +501,78 @@ footer {
 form input:hover,
 form select:hover,
 form textarea:hover {
-  border-color: #ff8c00;
-  box-shadow: 0 0 5px #ff8c00;
+  border-color: #697867;
+  box-shadow: 0 0 5px #445342;
 }
 
 /*--CONTACT--*/
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
-}
+
 
 header {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  padding: 20px;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+form .form-group {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button[type="submit"] {
+  background-color: #445342;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 .logo img {
   width: 100px;
@@ -525,12 +587,7 @@ nav ul {
 
 /*----about us--*/
 /* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
-  width: 100vw;
-  overflow-x: hidden;
-}
+
 
 /* Header Styles */
 header {
@@ -597,7 +654,7 @@ nav ul .Reservations a {
 }
 
 nav ul .Reservations a:hover {
-  background-color: goldenrod;
+  background-color: rgb(54, 74, 60);
 }
 
 /* Content Section Styles */
@@ -670,7 +727,7 @@ button {
 .text-with-image {
   background-size: cover;
   color: #000;
-  padding:
+  padding: 50px;
 }
 
 /*-scrool-bar-*/
@@ -682,4 +739,29 @@ button {
   border-radius: 20px;
   background-color: #1d1a1a;
 
+}
+
+
+/*---size--*/ 
+@media screen and (max-width: 768px) {
+
+}
+
+
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+ 
+  color: #445342;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #333333;
 }
